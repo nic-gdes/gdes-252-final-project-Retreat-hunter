@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Contact page</title>
+</head>
+<body class="opacity">
+
+    <nav>
+        <div id="nav">
+            <img src="logos_and_icons/Imaginary_solutions_Icon.png" alt="Logo">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="join us">Join Us</a></li>
+                <li><a href="contract">Contact</a></li>
+            </ul>
+        </div>
+        <div id="theme-toggle">
+            <span onclick="toggleTheme()">🌞</span>
+        </div>
+    </nav>
+    
+    <!-- This is the contact page -->
+    <section id="contact-page">
+        
+        <article id="contact-info">    
+            <h1>Get in Touch with Imaginary Solutions Inc.</h1>
+            <p>We're excited to hear from you! Whether you have a question, want to explore our services further, or just want to say hello, our team is here and ready to assist you.</p>
+            <!-- Add a link to open the modal -->
+            <a href="#" onclick="openModal()">Get Connected</a>
+        </article>
+    </section>
+
+    <!-- This is the modal for contact information -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contact Information</h2>
+            <p>[Insert Phone Number]</p>
+            <p>Email: <a href="mailto:info@imaginarysolutions.com">info@imaginarysolutions.com</a></p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js">
+    </script>
+</body>
+</html>

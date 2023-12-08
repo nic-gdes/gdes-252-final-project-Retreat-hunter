@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Calculator</title>
+</head>
+<body class="opacity">
+
+    <nav>
+        <div id="nav">
+            <img src="logos_and_icons/Imaginary_solutions_Icon.png" alt="Logo">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="join us">Join Us</a></li>
+                <li><a href="contract">Contact</a></li>
+            </ul>
+        </div>
+        <div id="theme-toggle">
+            <span onclick="toggleTheme()">🌞</span>
+        </div>
+    </nav>
+    
+    <!-- this is the innocalc -->
+    <div class="container opacity">
+        <h1>Unit Converter</h1>
+
+        <label for="input-value">Enter value:</label>
+        <input type="number" id="input-value" placeholder="Enter value">
+        
+        <div class="conversion-section">
+            <button onclick="convertFahrenheitToCelsius()">Fahrenheit to Celsius</button>
+            <div id="fahrenheit-result"></div>
+        </div>
+
+        <div class="conversion-section">
+            <button onclick="convertFeetToMiles()">Feet to Miles</button>
+            <div id="feet-result"></div>
+        </div>
+
+        <div class="conversion-section">
+            <button onclick="convertInchesToCentimeters()">Inches to Centimeters</button>
+            <div id="inches-result"></div>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
