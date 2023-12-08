@@ -10,18 +10,20 @@
 
     <nav>
         <div id="nav">
-            <img src="logos_and_icons/Imaginary_solutions_Icon.png" alt="Logo">
-            <div class="menu-toggle">
+            <img src="logos_and_icons/Imaginary_solutions_Icon.png" alt="Imaginary Solutions Icon">
+
+            <div class="menu-toggle" id="mobile-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            
             <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#approach">Approach</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="join us">Join Us</a></li>
-                <li><a href="contract">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div id="theme-toggle">
@@ -29,29 +31,32 @@
         </div>
     </nav>
     
-    <!-- this is the innocalc -->
-    <div class="container opacity">
+    <!-- Unit Converter Section -->
+    <div class="container opacity" role="main">
         <h1>Unit Converter</h1>
 
         <label for="input-value">Enter value:</label>
         <input type="number" id="input-value" placeholder="Enter value">
         
+        <!-- Fahrenheit to Celsius Conversion Section -->
         <div class="conversion-section">
             <button onclick="convertFahrenheitToCelsius()">Fahrenheit to Celsius</button>
-            <div id="fahrenheit-result"></div>
+            <div id="fahrenheit-result" aria-live="polite" aria-atomic="true"></div>
         </div>
 
+        <!-- Feet to Miles Conversion Section -->
         <div class="conversion-section">
             <button onclick="convertFeetToMiles()">Feet to Miles</button>
-            <div id="feet-result"></div>
+            <div id="feet-result" aria-live="polite" aria-atomic="true"></div>
         </div>
 
+        <!-- Inches to Centimeters Conversion Section -->
         <div class="conversion-section">
             <button onclick="convertInchesToCentimeters()">Inches to Centimeters</button>
-            <div id="inches-result"></div>
+            <div id="inches-result" aria-live="polite" aria-atomic="true"></div>
         </div>
     </div>
 
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js" defer></script>
 </body>
 </html>

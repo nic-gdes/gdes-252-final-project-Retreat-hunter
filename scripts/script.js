@@ -7,37 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
 function convertFahrenheitToCelsius() {
-    const fahrenheitInput = document.getElementById('input-value').value;
-    const celsiusResult = (fahrenheitInput - 32) * (5 / 9);
+    const inputValue = document.getElementById('input-value').value;
+    const celsiusResult = (inputValue - 32) * (5 / 9);
     document.getElementById('fahrenheit-result').textContent = `Result: ${celsiusResult.toFixed(2)} °C`;
 }
 
 function convertFeetToMiles() {
-    const feetInput = document.getElementById('input-value').value;
-    const milesResult = feetInput / 5280;
+    const inputValue = document.getElementById('input-value').value;
+    const milesResult = inputValue / 5280;
     document.getElementById('feet-result').textContent = `Result: ${milesResult.toFixed(6)} miles`;
 }
 
-function openModal() {
-    document.getElementById('myModal').style.display = 'flex';
+function convertInchesToCentimeters() {
+    const inputValue = document.getElementById('input-value').value;
+    const centimetersResult = inputValue * 2.54;
+    document.getElementById('inches-result').textContent = `Result: ${centimetersResult.toFixed(2)} cm`;
 }
 
-// Function to close the modal
-function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-}
-
-// Close modal if clicked outside of the content
-window.onclick = function (event) {
-    if (event.target === document.getElementById('myModal')) {
-        closeModal();
-    }
-}
-
-// Function to open the modal
 function openModal() {
     document.getElementById('myModal').style.display = 'flex';
 }
@@ -69,4 +56,3 @@ function toggleTheme() {
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
 }
-
